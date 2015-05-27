@@ -1,0 +1,46 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require normalize
+ *= require controlador1
+ */
+
+@import "breve";
+
+/*Variables*/
+$azul:blue;
+$fuente:normal 50px "Impact","Impact";
+
+html{
+	background: url('cuco.png') center;
+}
+
+h1{
+	font-size: 30pt;
+	float:left;
+	margin: 0px;
+	color: $azul;
+	padding-top: 23px;
+	padding-left: 20px;
+	font:$fuente;
+
+	@include text-shadow(1px,3px,0,#333333,.6);
+}
+
+#tabla_banner{
+    background-color: DimGray;
+	float:right;
+	margin: 35px;
+	padding-top: 37px;
+	padding-right: 25px;
+	padding-left: 35px;
+}
