@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 	def index
 		@users = User.all
+		session[:user] = nil
 	end
 
 	def new
