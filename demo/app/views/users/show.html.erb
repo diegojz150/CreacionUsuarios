@@ -1,0 +1,9 @@
+<h1>ALOHA!</h1>
+
+<h3>
+<%= @user.name %>
+<%= @user.email %>
+<%= @user.password %>
+
+<%= flash[:notice].present? ? "#{flash[:notice]}" : ""%>
+</h3>

@@ -1,0 +1,27 @@
+<h1>Lista usuarios</h1>
+
+<table>
+	<%if @users.count > 0 %>
+	<thead>
+		<tr>
+			<td>Nombre</p></td>
+			<td>Email</p></td>
+			<td>Acciones</p></td>
+		</tr>
+	</thead>
+		<% @users.each do |user| %>
+		<tr>
+			<td><p><%= user.name %></p></td>
+			<td><p><%= user.email %></p></td>
+			<td><p><%= link_to "Ver", user_path(user) %></p></td>
+			<td><p><%= link_to "Editar", edit_user_path(user) %></p></td>
+			<td><p><%= link_to "Eliminar", user_path(user), method: :delete, data:{confirm: "¿Esta seguro?"} %>
+				</p></td>
+		</tr>
+		<% end %>
+	<% else %>
+		
+			<p>No user<p>
+		
+	<% end %>
+</table>

@@ -1,0 +1,4 @@
+<h2>Inicio</h2>
+<h1>Bienvenido, <%= session[:user].present? ? "#{User.find(session[:user]).email}" : "Maker" %>!</h1>
+<a href="/users/new">Crear usuario</a>
+<a href="/users">Usuarios</a>
