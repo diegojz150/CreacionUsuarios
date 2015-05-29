@@ -11,7 +11,6 @@
  * file per style scope.
  *
  *= require normalize
- *= require controlador1
  */
 
 @import "breve";
@@ -21,44 +20,52 @@ $azul:blue;
 $fuente:normal 50px "Impact","Impact";
 
 html{
+	background-color: black;
+}
+.container{
+	display: block;
+	/*max-width: 1024px;*/
+	text-align: center;
+	/*width: 100%;*/
+	width: 1024px;
 	background: url('cuco.png') center;
-}
+	header{
+		border: 1px solid blue;
+		width: 90%;
+		margin: 0 auto;
 
-h1{
-	font-size: 30pt;
-	margin: 0px;
-	color: $azul;
-	padding-top: 23px;
-	padding-left: 20px;
-	font:$fuente;
-
-	@include text-shadow(1px,3px,0,#333333,.6);
-}
-
-
-p{
-	margin: 0 auto;
-	text-align: justify;
-	color:white;
-}
-
-#tabla_banner{
-    background-color: DimGray;
-	float:right;
-	margin: 35px;
-	padding-top: 37px;
-	padding-right: 25px;
-	padding-left: 35px;
-}
-
-.field_with_errors{
-	display: inline-block;
-	input{
-		border: 2px solid red;
+		div.menu{
+			ul{
+				display:inline-block;
+				margin: 0 auto;
+				padding: 20px;
+				/*float: left;*/
+				position: absolute;
+				li{
+					display:inline-block;
+					padding: 0;
+					a{
+						color: white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		
+		#logo{
+			display: inline-block;
+			height: 100px;
+		}
+		
+		div.connect{
+			ul{
+				margin: 0 auto;
+				padding: 20px;
+				position: absolute;
+				li{
+					display: inline-block;
+				}
+			}
+		}
 	}
-}
-
-td{
-	border: solid black;
-	padding-right: 40px;
 }

@@ -1,4 +1,42 @@
-<h2>Inicio</h2>
-<h1>Bienvenido, <%= session[:user].present? ? "#{User.find(session[:user]).email}" : "Maker" %>!</h1>
-<a href="/users/new">Crear usuario</a>
-<a href="/users">Usuarios</a>
+<div class="container">
+	<div class="fold fold_uno">
+		<header>
+			<div class="menu">
+				<ul>
+					<li><a href="">How it works?</a</li>
+					<li>Blog</li>
+					<li>Contact us</li>					
+				</ul>
+			</div>
+			<div class="connect">
+				<ul>
+					<li><a href="">Conectarse</a></li>
+					<li>Registrarse</li>
+				</ul>
+			</div>
+		</header>
+		<section>
+			<article>
+				<h1>Descubra sus datos.</h1>
+				<p>Donec suscipit eu purus facilisis congue. Pellentesque a lectus quis sapien molestie malesuada sed non ex. Integer rhoncus laoreet sollicitudin. Ut vehicula consequat orci, vitae mollis eros pharetra in. Morbi a metus non tellus commodo feugiat. Mauris in metus nulla. Duis turpis velit, tristique ac maximus non, fringilla sed lectus.</p>		
+			</article>
+			<article class="button_container">
+				<a href="/users/new" class="button">Registrarse</a>
+			</article>
+		</section>
+	</div>
+	<div class="fold fold_dos">
+		<section>
+			<article>
+				<img src="" alt="">
+			</article>
+			<article>
+				<ul>
+					<li>Registrese</li>
+					<li>Gestione sus clientes</li>
+					<li>Mejore sus tiempos de reacción</li>
+				</ul>
+			</article>
+		</section>
+	</div>
+</div>
