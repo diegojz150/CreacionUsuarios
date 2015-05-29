@@ -23,49 +23,125 @@ html{
 	background-color: black;
 }
 .container{
+	margin: 0 auto;
 	display: block;
-	/*max-width: 1024px;*/
+	/*max-width: 1024px;
+	width: 100%;*/
 	text-align: center;
-	/*width: 100%;*/
 	width: 1024px;
 	background: url('cuco.png') center;
+	clear: both;
 	header{
-		border: 1px solid blue;
-		width: 90%;
 		margin: 0 auto;
+		padding: 15px;
 
 		div.menu{
+			float: left;
 			ul{
-				display:inline-block;
 				margin: 0 auto;
-				padding: 20px;
-				/*float: left;*/
-				position: absolute;
+				padding: 0px;
 				li{
 					display:inline-block;
-					padding: 0;
+					margin: 0px 7px 0px 7px;
 					a{
-						color: white;
+						color: gray;
 						text-decoration: none;
+						padding-bottom: 5px;
+						font: normal 10px "Arial","Impact";
+					}
+					a:hover{
+						background: linear-gradient(180deg, transparent 92%, #00FFCC 8%);
 					}
 				}
 			}
 		}
 		
-		#logo{
+		div.logo_img{
 			display: inline-block;
-			height: 100px;
+			img{
+				height: 70px;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 		
 		div.connect{
+			float: right;
 			ul{
 				margin: 0 auto;
-				padding: 20px;
-				position: absolute;
+				padding-left: 78px;
 				li{
 					display: inline-block;
+					margin: 0px 7px 0px 7px;
+					a{
+						color: gray;
+						text-decoration: none;
+						padding-bottom: 5px;
+						font: normal 10px "Arial","Impact";
+					}
+					a:hover{
+						background: linear-gradient(180deg, transparent 92%, #00FFCC 8%);
+					}
 				}
 			}
 		}
 	}
+
+	section{
+		margin: 120px 0px 0px 0px;
+			.titulo_uno{
+				margin: 120px 0px 0px 0px;
+					width: 500px;
+					height:30px;
+					margin: 0 auto;
+				img{
+					height: 50px;
+				}
+				h1{
+					display: block;
+					color: white;
+				}
+				a{
+					padding: 10px 20px 10px 20px;
+					font: normal 11px "Arial","Impact";
+					color: white;
+					text-decoration: none;
+					background-color: #00CC99;
+					border-radius: 20px;
+				}
+				a:hover{
+					background-color: #33CCCC;
+				}
+			}
+			.pie_pag{
+				margin: 280px 0px 0px 0px;
+				padding: 0px 0px 17px 0px;
+
+				img{
+					height: 70px;
+				}
+				#cristiano{
+					height: 600px;
+					position: absolute;
+					bottom: -9px;
+					right: 120px;
+				}
+
+				h2{
+					font: normal 10px "Arial","Impact";
+					color:gray;
+				}
+				h3{
+					font: normal 9px "Arial","Impact";
+					color: gray;
+					width: 300px;
+					height:30px;
+					margin: 0 auto;
+				}
+				a{
+					font: normal 11px "Arial","Impact";
+					color: #00CC99;
+				}
+			}
+		}
 }
